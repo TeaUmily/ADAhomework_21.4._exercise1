@@ -6,57 +6,47 @@
     <TextView
         android:id="@+id/textview_newtask_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="50px"
-        android:text="Enter task title:"/>
+        android:layout_height="wrap_content" android:textSize="@dimen/TextSize_25sp"
+        android:text="@string/enter_task_title"/>
     <EditText
         android:id="@+id/edittext_newtask_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textview_newtask_title"
-        android:textColor="#FFF753"
-        android:textColorHint="#FFF"
-        android:background="#000000"
-        android:gravity="center"
         android:inputType="text"
-        android:hint="Finish homework"/>
+        android:hint="@string/task_title_hint"
+        style="@style/PlainTextBox"/>
+
     <TextView
         android:id="@+id/textview_newtask_summary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/edittext_newtask_title"
-        android:textSize="50px"
-        android:text="Enter task summary:"
-        android:inputType="text"/>
+        android:textSize="@dimen/TextSize_25sp"
+        android:text="@string/enter_task_summary"/>
     <EditText
         android:id="@+id/edittext_newtask_summary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textview_newtask_summary"
-        android:textColor="#FFF753"
-        android:textColorHint="#fff"
-        android:background="#000000"
-        android:gravity="center"
         android:inputType="text"
-        android:hint="Do OSC homework, all of the exercises"/>
+        android:hint="@string/task_summary_hint"
+        style="@style/PlainTextBox"/>
     <TextView
         android:id="@+id/textview_newtask_importance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/edittext_newtask_summary"
-        android:textSize="50px"
-        android:text="Enter task importance:"/>
+        android:textSize="@dimen/TextSize_25sp"
+        android:text="@string/TextView_task_importance"/>
     <EditText
         android:id="@+id/edittext_newtask_importance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textview_newtask_importance"
-        android:textColor="#FFF753"
-        android:textColorHint="#fff"
-        android:background="#000000"
-        android:gravity="center"
         android:inputType="number"
-        android:hint="1"/>
+        android:hint="@string/number1_hint"
+        style="@style/PlainTextBox"/>
     <Button
         android:id="@+id/button_newtask_save"
         android:layout_width="wrap_content"
@@ -70,12 +60,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/TextSize_25sp"
         android:layout_below="@id/button_newtask_save">
         <TextView
             android:id="@+id/textview_newtask_display"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="No tasks to show"/>
+            android:text="@string/no_tasks_to_show"/>
     </ScrollView>
 </RelativeLayout>
