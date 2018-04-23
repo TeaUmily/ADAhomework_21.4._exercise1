@@ -1,4 +1,4 @@
-package hr.ferit.bruno.exercise1;
+package hr.ferit.tumiljanovic.tasks;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

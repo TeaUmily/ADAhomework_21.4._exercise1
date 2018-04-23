@@ -1,4 +1,4 @@
-package hr.ferit.bruno.exercise1;
+package hr.ferit.tumiljanovic.tasks;
 
 import org.junit.Test;
 

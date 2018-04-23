@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="PlainTextBox">
+        <item name="android:textColor">@color/inputTextColor </item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
 </resources>

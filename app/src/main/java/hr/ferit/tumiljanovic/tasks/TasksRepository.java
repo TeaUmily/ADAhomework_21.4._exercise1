@@ -1,22 +1,22 @@
-package hr.ferit.bruno.exercise1;
+package hr.ferit.tumiljanovic.tasks;
 
 import java.util.List;
 
-import hr.ferit.bruno.exercise1.model.Task;
-import hr.ferit.bruno.exercise1.persistance.FakeDatabase;
+import hr.ferit.tumiljanovic.tasks.model.Task;
+import hr.ferit.tumiljanovic.tasks.persistance.Database;
 
 public class TasksRepository {
 
 	private static TasksRepository sInstance = null;
 
-	public FakeDatabase getmDatabase() {
+	public Database getmDatabase() {
 		return mDatabase;
 	}
 
-	private FakeDatabase mDatabase;
+	private Database mDatabase;
 
 	private TasksRepository(){
-		mDatabase = new FakeDatabase();
+		mDatabase = new Database();
 	}
 
 	public static synchronized TasksRepository getInstance(){

@@ -1,4 +1,4 @@
-package hr.ferit.bruno.exercise1.model;
+package hr.ferit.tumiljanovic.tasks.model;
 
 public class Task {
 	private int mImportance;

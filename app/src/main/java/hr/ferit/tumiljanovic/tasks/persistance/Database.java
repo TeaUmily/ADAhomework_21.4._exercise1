@@ -1,15 +1,15 @@
-package hr.ferit.bruno.exercise1.persistance;
+package hr.ferit.tumiljanovic.tasks.persistance;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import hr.ferit.bruno.exercise1.model.Task;
+import hr.ferit.tumiljanovic.tasks.model.Task;
 
-public class FakeDatabase {
+public class Database {
 
 	private List<Task> mTasks;
 
-	public FakeDatabase() {
+	public Database() {
 		mTasks = new ArrayList<>();
 	}
 
